@@ -1,0 +1,180 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Poppins", sans-serif;
+}
+
+body {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 20px;
+     background: whitesmoke;
+}
+
+span {
+     color: red;
+}
+
+.container {
+     width: 100%;
+     max-width: 700px;
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+     padding: 20px;
+     border-radius: 2px;
+     box-shadow: 0px 5px 10px rgba(26, 26, 26, 0.322),
+          1px 0px 10px rgba(26, 26, 26, 0.322);
+}
+
+.heading {
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 115%;
+     color: #2c6dd4;
+     text-shadow: 2px 2px 10px #4b79c27e;
+}
+
+fieldset {
+     padding: 20px 10px;
+     border: none;
+     border-top: 2px solid #5a99ff8e;
+     margin: 15px 0;
+
+}
+
+legend {
+     font-size: large;
+     font-weight: bold;
+     padding: 0 7px;
+     color: #2c6dd4;
+}
+
+.row {
+     display: flex;
+     gap: 15px;
+     margin: 20px 0;
+}
+
+.row1 {
+     margin: 10px 0;
+}
+
+.col {
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+     padding: 5px 0;
+}
+
+.col1 {
+     position: relative;
+}
+
+.col input {
+     padding: 10px;
+     outline: none;
+     border: 2px solid rgba(94, 94, 94, 0.562);
+     border-radius: 3px;
+     font-size: 15px;
+     overflow: hidden;
+}
+
+.col input.error {
+     border: 2px solid red ;
+}
+
+.col input.error:focus {
+     border: 2px solid red;
+}
+
+.col select.error {
+     border: 2px solid red ;
+}
+
+.col select.error:focus {
+     border: 2px solid red;
+}
+
+.col label {
+     font-size: 16px;
+     margin-bottom: 5px;
+
+}
+
+.col1 label {
+     position: absolute;
+     top: 50%;
+     left: 10px;
+     transform: translateY(-55%);
+     font-size: 15px;
+     color: #0000008e;
+     background: white;
+     pointer-events: none;
+     padding: 0 4px;
+     transition: transform .5s ease, color .5s ease;
+}
+
+.col1 input:focus+label,
+.col1 input:valid+label {
+     transform: translateY(-145%) translateX(-10%) scale(0.85);
+     color: #2c6dd4;
+
+}
+
+.col input:focus {
+     border: 2px solid #2c6dd4;
+}
+
+select,
+textarea {
+     padding: 9px 10px;
+     outline: none;
+     border: 2px solid rgba(94, 94, 94, 0.562);
+     border-radius: 3px;
+     font-size: 15px;
+     overflow: hidden;
+}
+textarea{
+     padding: 10px 15px 15px;
+}
+option {
+     background: #84a3d4b4
+}
+
+select:focus,
+textarea:focus {
+     border: 2px solid #2c6dd4;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill {
+     -webkit-box-shadow: 0 0 0 100px white inset ;
+     -webkit-text-fill-color: #000 ;
+}
+
+.btn input {
+     background-color: #6e98db;
+     font-size: 16px;
+     text-align: center;
+     border: none;
+     transition: .3s ease;
+}
+
+.btn input:hover {
+     background: #1f69e0;
+     color: white;
+}
+
+@media (max-width: 600px) {
+     .row {
+          display: flex;
+          flex-direction: column;
+     }
+}
