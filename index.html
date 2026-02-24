@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <title>Vehicle Service Center</title>
+
+</head>
+
+<body>
+     <div class="container">
+          <form id="myform" action="action_c.php" method="post" novalidate>
+               <div class="heading">
+                    <h1>Vehicle Service Center</h1>
+               </div>
+               <div class="field field1">
+                    <fieldset>
+                         <legend>Owner Details <span>*</span></legend>
+                         <div class="row row1">
+                              <div class="col col1">
+                                   <input type="text" name="name" class="inputs opt" autofocus required>
+                                   <label for="">Customer Name</label>
+                              </div>
+                              <div class="col col1">
+                                   <input type="tel" name="phone" class="inputs" placeholder="3XX-XXXXXXX" required>
+                                   <label for="">Contact Number</label>
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col col1">
+                                   <input type="email" name="email" class="inputs" required>
+                                   <label for="">Email Address</label>
+                              </div>
+                              <div class="col col1">
+                                   <input type="text" name="address" class="inputs" required>
+                                   <label for="">Residential Address</label>
+                              </div>
+                         </div>
+                    </fieldset>
+               </div>
+               <div class="field field2">
+                    <fieldset>
+                         <legend>Car Details <span>*</span></legend>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Car number <span>*</span></label>
+                                   <input type="text" name="car-number" class="inputs" placeholder="ABC-123">
+                              </div>
+                              <div class="col">
+                                   <label for="">Vehicle Category <span>*</span></label>
+                                   <select name="vehicle-type" class="inputs">
+                                        <option value=""></option>
+                                        <option value="Sedan">Sedan</option>
+                                        <option value="SUV">SUV</option>
+                                        <option value="Sports Car">Sports Car</option>
+                                        <option value="Electric Car">Electric Car</option>
+                                        <option value="Truck">Truck</option>
+                                        <option value="Motorcycle">Motorcycle</option>
+                                        <option value="Bus">Bus</option>
+                                        <option value="Coaster">Coaster</option>
+                                   </select>
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Car Model <span>*</span></label>
+                                   <input type="number" name="model" class="inputs" min="1900" max="2025"
+                                        placeholder="2000">
+                              </div>
+                              <div class="col">
+                                   <label for="">Fuel Category <span>*</span></label>
+                                   <select name="fuel-type" class="inputs">
+                                        <option value=""></option>
+                                        <option value="Petrol">Petrol</option>
+                                        <option value="Diesel">Diesel</option>
+                                        <option value="CNG">CNG</option>
+                                        <option value="High Octane">High Octane</option>
+                                        <option value="Battery Power">Battery Power</option>
+                                   </select>
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Brand Name <span>*</span></label>
+                                   <select name="company" class="inputs">
+                                        <option value=""></option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Kia Sportage">Kia Sportage</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Mehran">Mehran</option>
+                                        <option value="Suzuki">Suzuki</option>
+                                        <option value="Tesla">Tesla</option>
+                                        <option value="Audi">Audi</option>
+                                        <option value="Porsche">Porsche</option>
+                                        <option value="Rolls Royce">Rolls Royce</option>
+                                        <option value="Lamborghini">Lamborghini</option>
+                                        <option value="Ferrari">Ferrari</option>
+                                        <option value="Haval">Haval</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="Bugatti">Bugatti</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Daewoo">Daewoo</option>
+                                        <option value="BYD">BYD</option>
+                                        <option value="Faisal Movers">Faisal Movers</option>
+                                   </select>
+                              </div>
+                              <div class="col">
+                                   <label for="">Registration Number</label>
+                                   <input type="text" name="reg" placeholder="1ABCDEFGHIJ123456">
+                              </div>
+                         </div>
+                    </fieldset>
+               </div>
+               <div class="field field3">
+                    <fieldset>
+                         <legend>Service Details <span>*</span></legend>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Service Entry Date <span>*</span></label>
+                                   <input type="date" name="service-date" class="inputs">
+                              </div>
+                              <div class="col">
+                                   <label for="">Next Service date <span>*</span></label>
+                                   <input type="date" name="next-service" class="inputs">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Service Type <span>*</span></label>
+                                   <select name="service-type" class="inputs">
+                                        <option value=""></option>
+                                        <option value="Full Service">Full Service</option>
+                                        <option value="Oil Change">Oil Change</option>
+                                        <option value="Filter Replacement">Filter Replacement</option>
+                                        <option value="Engine Service">Engine Service</option>
+                                        <option value="Software Service">Software Service</option>
+                                        <option value="Tyre Service">Tyre Service</option>
+                                        <option value="Car Wash">Car Wash</option>
+                                   </select>
+                              </div>
+                              <div class="col">
+                                   <label for="">Parts Replaced</label>
+                                   <select name="parts-rep">
+                                        <option value="N/A">N/A</option>
+                                        <option value="Engine">Engine</option>
+                                        <option value="Battery">Battery</option>
+                                        <option value="Radiator">Radiator</option>
+                                        <option value="Fuel tank">Fuel tank</option>
+                                        <option value="Clutch">Clutch</option>
+                                        <option value="Gearbox">Gearbox</option>
+                                        <option value="Axles">Axles</option>
+                                        <option value="Shock Obsorvers">Shock Obsorvers</option>
+                                        <option value="Steering Wheel">Steering Wheel</option>
+                                        <option value="Break discs">Break discs</option>
+                                        <option value="Frame">Frame</option>
+                                        <option value="Door">Door</option>
+                                        <option value="Mirror">Mirror</option>
+                                        <option value="Headlights">Headlights</option>
+                                        <option value="Horn">Horn</option>
+                                        <option value="Wiring">Wiring</option>
+                                        <option value="Seats">Seats</option>
+                                        <option value="Tyres">Tyres</option>
+                                        <option value="Rims">Rims</option>
+                                        <option value="Airbags">Airbags</option>
+                                   </select>
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Current Mileage(KM) <span>*</span></label>
+                                   <input type="number" name="cur-km" class="inputs" placeholder="00000" min="0"
+                                        step="1000">
+                              </div>
+                              <div class="col">
+                                   <label for="">Next Service Mileage(KM) <span>*</span></label>
+                                   <input type="number" name="next-km" class="inputs" placeholder="00000" min="0"
+                                        step="1000">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Technician Name</label>
+                                   <input type="text" name="tname">
+                              </div>
+                              <div class="col">
+                                   <label for="">Advisor Name</label>
+                                   <input type="text" name="aname">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Services details</label>
+                                   <textarea rows="5" name="work-detail" placeholder="Service Description"></textarea>
+                              </div>
+                         </div>
+                    </fieldset>
+               </div>
+               <div class="field field4">
+                    <fieldset>
+                         <legend>Payment Details <span>*</span></legend>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Labour Charges <span>*</span></label>
+                                   <input type="number" name="lab-fee" class="inputs" min="0" step="100">
+                              </div>
+                              <div class="col">
+                                   <label for="">Parts Charges <span>*</span></label>
+                                   <input type="number" name="parts-fee" class="inputs" min="0" step="500">
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Invoice Number</label>
+                                   <input type="text" name="iban-no">
+                              </div>
+                              <div class="col">
+                                   <label for="">Payment Method <span>*</span></label>
+                                   <select name="pay-method" class="inputs">
+                                        <option value="" name="pay-method"></option>
+                                        <option value="Debit/Credit Card" name="pay-method">Debit/Credit Card</option>
+                                        <option value="Jazz Cash" name="pay-method">Jazz Cash</option>
+                                        <option value="Easy Paisa" name="pay-method">Easy Paisa</option>
+                                        <option value="Cash" name="pay-method">Cash</option>
+                                   </select>
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col">
+                                   <label for="">Total Amount <span>*</span></label>
+                                   <input type="number" name="tpay" class="inputs" min="0" step="100">
+                              </div>
+                              <div class="col"></div>
+                         </div>
+               </div>
+               </fieldset>
+               <div class="row">
+                    <div class="col">
+                         <label for="">Remarks:</label>
+                         <textarea name="comment" cols="30" rows="5" placeholder="Write Your remarks..."></textarea>
+                    </div>
+               </div>
+               <div class="col btn">
+                    <input type="submit" name="submit" value="Submit">
+               </div>
+     </div>
+
+     </form>
+     </div>
+     <script>
+
+          document.getElementById("myform").onsubmit = invalid;
+
+          function invalid() {
+
+               let inputs = document.querySelectorAll(".inputs");
+               let firstError = null;
+               let valid = true;
+
+               for (let i = 0; i < inputs.length; i++) {
+                    if (inputs[i].value === "") {
+                         inputs[i].classList.add("error");
+                         if (!firstError) {
+                              firstError = inputs[i];
+                         }
+                         valid = false;
+                    } else {
+                         inputs[i].classList.remove("error");
+                    }
+               }
+
+               if (firstError) {
+                    firstError.scrollIntoView({ behavior: "smooth" });
+               }
+
+               return valid;
+          }
+     </script>
+
+</body>
+
+</html>
